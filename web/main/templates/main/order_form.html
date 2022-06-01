@@ -1,0 +1,107 @@
+{% extends 'main/wrapper.html' %}
+
+{% block content %}
+
+<section>
+    <div class="container-xxl">
+        <div align="center">
+            <div class="row">
+                <div class="col-sm-4">
+
+                        <div class="card" style="width: 18rem;">
+                          <img src={{ post.photo }} class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">{{ post.name }}</h5>
+                            <p class="card-text">Рекомендуем</p>
+                            <a href="#" class="btn btn-primary"> Читать </a>
+                          </div>
+                        </div>
+
+                </div>
+                <div class="col-sm-8">
+                    <h1 align="center">Форма заказа</h1>
+                    <p>Для заказа товара заполните поля следующей форма</p>
+                    <p>Все поля обязательны для заполнения</p>
+                    <form>
+                        <div class="row mb-3">
+                            <label for="colFormLabel" class="col-sm-2 col-form-label">Автор </label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="colFormLabel" placeholder="Автор">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="colFormLabel" class="col-sm-2 col-form-label">Название </label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="colFormLabel" placeholder="Название">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="colFormLabel" class="col-sm-2 col-form-label">Количество</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="colFormLabel" placeholder="Количество">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="colFormLabel" class="col-sm-2 col-form-label">Адресс доставки </label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="colFormLabel" placeholder="Адресс доставки">
+                            </div>
+                        </div>
+                        <form>
+                            <fieldset class="row mb-3">
+                                <legend class="col-form-label col-sm-10 pt-0">Способ доставки</legend>
+                                <div class="col-sm-3">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                      Почтой
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                      Курьером
+                                    </label>
+                                  </div>
+                                </div>
+                              </fieldset>
+                            </form>
+
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Способ оплаты</option>
+                            <option value="1">Наличка</option>
+                            <option value="2">Картой</option>
+                        </select>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Дополнительные пожелания</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Написать...</textarea>
+                        </div>
+
+
+                        <p></p>
+
+                        <div class="row mb-5">
+                            <div class="col-sm-5 offset-sm-7">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Ознакомлен с условиями доставки
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+{% endblock %}

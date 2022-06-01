@@ -1,0 +1,141 @@
+{% extends 'main/wrapper.html' %}
+
+{% block content %}
+
+<section >
+	<div class="container-md" align="center">
+    <table class="table table-bordered" >
+	<caption style="caption-side:top; text-align: center " >
+		<b>Таблица 1. Успеваемость обучаюз</b>
+	</caption>
+	<tbody>
+		<tr>
+			<th>ФИО</th>
+			<th>Информатика</th>
+			<th>Математика</th>
+			<th>Физика</th>
+			<th>Химия</th>
+		</tr>
+		<tr>
+			<td>Иванов</td>
+			<td>4</td>
+			<td>3</td>
+			<td>5</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>Петров</td>
+			<td>3</td>
+			<td>5</td>
+			<td>4</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>Наместников</td>
+			<td>5</td>
+			<td>5</td>
+			<td>5</td>
+			<td>5</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</section>
+
+<p></p>
+<div class="container-md" align="center">
+<table class="table table-bordered" border="4">
+	<caption style="caption-side:top; text-align: center " >
+		<b>Таблица 2. Инструмент</b>
+	</caption>
+	<tbody>
+		<tr>
+			<th>Назначение</th>
+			<th colspan="2">Инструмент</th>
+		</tr>
+		<tr>
+			<td>Разметка</td>
+			<td>HTML</td>
+			<td>XHTML</td>
+		</tr>
+		<tr>
+			<td>Оформление</td>
+			<td colspan="2">CSS</td>
+		</tr>
+		<tr>
+			<td>Разработка</td>
+			<td>PHP</td>
+			<td>Python</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="container-xl" align="center">
+	<table class="table table-bordered" border="6">
+		<caption style="caption-side:top; text-align: center " >
+		<b>Таблица 3. Пример обьединение ячеек </b>
+	</caption>
+	<tbody>
+		<tr>
+			<td>Ячейка</td>
+			<td colspan="2">Ячейка</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Ячейка</td>
+			<td>Ячейка</td>
+			<td>Ячейка</td>
+		</tr>
+		<tr>
+			<td>Ячейка</td>
+			<td>Ячейка</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+
+<div class="container-md">
+	<table class="table table-bordered border-secondary" border="10">
+		<caption style="caption-side:top; text-align: center " >
+		<b>Таблица 4-1. Пример форматирования данных в ячейках таблиц </b>
+	</caption>
+	<tbody>
+		<tr>
+			<td align="right"> <b>Заголовок 1</b></td>
+			<td align="left"><b>Заголовок 2</b></td>
+			<td align="right"><b>Заголовок 3</b></td>
+
+		</tr>
+		<tr>
+			<td align="center">Ячейка 1</td>
+			<td align="center">Ячейка 2</td>
+			<td align="center">Ячейка 3</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+
+<div class="container-md">
+	<table class="table table-bordered border-secondary" border="10">
+		<caption style="caption-side:top; text-align: center " >
+		<b>Таблица 4-2. Пример использования атрибута bgcolor </b>
+	</caption>
+	<tbody>
+		<tr align="center">
+			<td> <b>Заголовок 1</b></td>
+			<td><b>Заголовок 2</b></td>
+			<td ><b>Заголовок 3</b></td>
+
+		</tr>
+		<tr>
+			<td align="center" class="table-danger">Ячейка 1</td>
+			<td align="center" class="table-success">Ячейка 2</td>
+			<td align="center" class="table-primary">Ячейка 3</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+{% endblock %}

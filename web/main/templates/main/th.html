@@ -1,0 +1,37 @@
+{% extends 'main/wrapper.html' %}
+
+{% block content %}
+<p></p>
+<div class="container-md" align="center">
+<table border="1" class="table-warning" >
+	<caption style="caption-side:top; text-align: center " >
+		<b>Вложенные таблицы</b>
+	</caption>
+	<tbody>
+		<tr>
+			<td><table border="10" class="table table-bordered" >
+	<tbody>
+		<tr>
+			<td>lorem</td>
+		</tr>
+		<tr>
+			<td>Ipisum</td>
+		</tr>
+		<tr>
+			<td>Dolor</td>
+		</tr>
+		<tr>
+			<td>Sit</td>
+		</tr>
+		<tr>
+			<td>Amet</td>
+		</tr>
+	</tbody>
+</table></td>
+			<td bgcolor="yellow">Вложенную таблицу можно рассматривать как одномерный массив, в котором индексами служат значения целочисленного типа. Вложенная таблица может иметь пустые элементы, которые появляются после их удаления встроенной процедурой DELETE. Количество элементов может динамически увеличиваться.</td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
+{% endblock %}

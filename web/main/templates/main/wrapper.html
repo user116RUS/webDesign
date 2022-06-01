@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<script type = "text/javascript">
+            function fun() {
+
+
+               alert ("Добро пожаловать на главную страницу");
+            }
+            function reg(){
+                alert("Регистация")
+            }
+      </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="http://127.0.0.1:8000" class="nav-link px-2 link-secondary" onclick = "fun();">Главная</a></li>
+        <li><a href="http://127.0.0.1:8000/grids/" class="nav-link px-2 link-dark">Таблицы</a></li>
+        <li><a href="http://127.0.0.1:8000/order_form/" class="nav-link px-2 link-dark">Форма заказа</a></li>
+        <li><a href="http://127.0.0.1:8000/video" class="nav-link px-2 link-dark">Видео</a></li>
+        <li><a href="http://127.0.0.1:8000/1" class="nav-link px-2 link-dark">Читать</a></li>
+      </ul>
+      <div class="col-md-3 text-end">
+          <button onclick="window.location.href = 'http://127.0.0.1:8000/reg';" type="button" class="btn btn-outline-primary me-2" >Регистрация</button>
+          <button onclick="window.location.href = 'http://127.0.0.1:8000/ank'; reg();" type="button" class="btn btn-primary" >Войти</button>
+      </div>
+    </header>
+{% block content %}
+{% endblock %}
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="http://127.0.0.1:8000" class="nav-link px-2 text-muted">Home</a></li>
+
+    </ul>
+    <p class="text-center text-muted">© 2022 Ramil Nurgaleev</p>
+  </footer>
+</div>
+</body>
+</html>

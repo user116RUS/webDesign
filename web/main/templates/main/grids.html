@@ -1,0 +1,37 @@
+{% extends 'main/wrapper.html' %}
+
+{% block content %}
+<p></p>
+<div class="container-xxl">
+    <div align="center">
+        <h1>Cводная таблица</h1>
+    </div>
+</div>
+<p></p>
+<div class="container-xxl">
+  <div class="row" align="center">
+    <div class="col">
+		<a class="btn btn-primary" href="sec/" role="button">Пример 1</a>
+	</div>
+    <div class="col">
+      <a class="btn btn-primary" href="th/" role="button">Пример 2</a>
+    </div>
+    <div class="col">
+      <a class="btn btn-primary" href="four/" role="button">Пример 3</a>
+    </div>
+  </div>
+</div>
+
+<section>
+    <div class="container-xxl">
+        <div align="right">
+            {% for i in questions %}
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">{{ i }}</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

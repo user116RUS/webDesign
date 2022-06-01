@@ -1,0 +1,134 @@
+{% extends 'main/wrapper.html' %}
+
+{% block content %}
+
+<section>
+    <div class="container-xxl">
+        <div align="center">
+            <table bordercolor="white" border="5" class="table-bordered" >
+                <tr>
+                    <td bgcolor="grey" align="center"><b>Личные данные</b></td>
+                    <td bgcolor="grey" align="center"><b>Увлечения</b></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#c0c0c0">
+                        <form >
+                            <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Ваше имя</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Пароль</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3">
+                                </div>
+
+                            </div>
+                            <p>Загрузить фото:  </p>
+                            <div align="center">
+                            <div class="input-group mb-3">
+
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                            </div>
+                            </div>
+                        </form>
+                    </td>
+                    <td bgcolor="#c0c0c0">
+                        <div class="container-xl">
+                            <div class="col-sm-10 offset-sm">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Компьютеры и интернет
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 offset-sm">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Литература и искусство
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 offset-sm">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                         Музыка и танцы
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 offset-sm">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Автомобили
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 offset-sm">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Спорт и активный отдых
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="grey" align="center"><b>Место жительства</b></td>
+                    <td align="center" bgcolor="#FAEBD7"><b>Комментарии</b></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#c0c0c0">
+                        <select class="form-select" size="3" aria-label="size 3 select example">
+                            <option selected>Амур</option>
+                            <option value="1">Санкт-Питербург</option>
+                            <option value="2">Рязань</option
+                            <option value="3">Красноярск</option>
+                            <option value="4">Комсомольск-на-Амуре</option>
+                        </select>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Страна</option>
+                            <option value="1">Россия</option>
+                            <option value="2">Украина</option
+                            <option value="3">Польша</option>
+                            <option value="4">Китай</option>
+                        </select>
+                    </td>
+                    <td bgcolor="#FAEBD7">
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label"></label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Я впервые на сайте
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                          <label class="form-check-label" for="flexCheckChecked">
+                            Я тут не в первый раз
+                          </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center" bgcolor="#FAEBD7">
+                        <a class="btn btn-primary" href="#" role="button">Отправить</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+{% endblock %}
